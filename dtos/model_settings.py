@@ -1,9 +1,9 @@
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from dtos.model_data import ModelData
 
-@dataclass  
+@dataclass
 class ModelSettings:
-    model_data: ModelData = ModelData("openai", "gpt-4o-mini")
+    model_data: ModelData = field(default_factory=ModelData)
     temperature: float = 0.7
     max_tokens: int = 1000
     top_p: float = 0.9
