@@ -21,6 +21,7 @@ class PostgresClient:
 
     def __init__(self, db_url=None):
         self.db_url = db_url or DB_URL
+        log_info(f"DB_URL: {self.db_url}")
         self.engine = create_engine(
             self.db_url,
             pool_size=5,
