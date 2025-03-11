@@ -1,0 +1,17 @@
+streamlit>=1.32.0
+openai>=1.12.0
+langchain
+python-dotenv>=1.0.0
+streamlit-oauth
+psycopg
+sqlalchemy
+langchain-openai
+langchain-core
+chromadb
+langchain-community
+pypdf
+nltk 
+rake-nltk
+sentence-transformers
+langchain-huggingface
+transformers>=4.35.0
