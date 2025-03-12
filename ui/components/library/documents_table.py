@@ -28,7 +28,8 @@ class DocumentsTable:
             if selected_indices:
                 selected_index = selected_indices[0]
                 selected_doc_id = pandas_df.iloc[selected_index]['id']
-                return selected_doc_id
+                log_info(f"Selected document ID: {selected_doc_id}")
+                return int(selected_doc_id)
             else:
                 st.write("Select a document from the table above to view details")
                 return None

@@ -6,5 +6,6 @@ class ChatHistory:
         messages = MessageManager().get_chat_messages()
         
         for message in messages:
-            with st.chat_message(message.role):
-                st.markdown(message.content)
+            if message.role != "system":
+                with st.chat_message(message.role):
+                    st.markdown(message.content)

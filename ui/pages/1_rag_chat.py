@@ -1,4 +1,3 @@
-from backend.facades.library_facade import LibraryFacade
 from ui.components.chat.chat_history import ChatHistory
 from ui.components.chat.user_input import UserInput
 from ui.components.chat.rag.rag_chat_sidebar import RagChatSidebar
